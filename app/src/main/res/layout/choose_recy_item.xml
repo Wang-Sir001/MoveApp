@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_220"
+    android:layout_height="@dimen/dp_85"
+    android:background="@color/dark_blue_grey">
+
+    <TextView
+        android:id="@+id/choose_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_14"
+        android:textColor="@color/colorDef"
+        android:text="中影I Do巨幕全景声厅"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/choose_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_one"
+        android:layout_marginTop="@dimen/dp_14"
+        android:textColor="@color/colorDef"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:text="11:22 —— 13:03"/>
+
+    <TextView
+        android:id="@+id/choose_logo"
+        android:layout_width="@dimen/dp_14"
+        android:layout_height="@dimen/dp_14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+
+</RelativeLayout>

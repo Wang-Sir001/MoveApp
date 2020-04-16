@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack">
+
+    <RelativeLayout
+        android:id="@+id/movie_re"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:id="@+id/choose_back"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="26dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/choose_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#fff"
+            android:textSize="14dp" />
+    </RelativeLayout>
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:layout_width="400dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/choose_JC"
+        android:layout_height="wrap_content"
+        />
+
+    <com.bw.movie.widget.SeatView
+        android:id="@+id/seat_view"
+        android:layout_width="400dp"
+        android:layout_height="@dimen/dp_400"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@id/movie_re"/>
+
+    <TextView
+        android:id="@+id/choose_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seat_view"
+        android:layout_marginTop="26dp"
+        android:text="请选择影厅和时间"
+        android:textSize="20sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorDef"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_recycler"
+        android:layout_width="match_parent"
+        android:layout_below="@id/choose_tv"
+        android:layout_marginTop="24dp"
+        android:layout_height="76dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:id="@+id/choose_pay"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:background="@color/colorLoginText"/>
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_65"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/pay_rl"
+            android:background="@color/colorWhite"
+            android:layout_height="@dimen/dp_148">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:layout_marginLeft="@dimen/dp_24"
+                android:layout_marginTop="@dimen/sp_10"
+                android:text="选择支付方式"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/weixin"
+                android:layout_marginTop="@dimen/dp_50"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_launcher"
+                android:layout_marginTop="@dimen/dp_90"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:text="取消支付"
+                android:gravity="center"
+                android:textSize="@dimen/sp_12"
+                android:background="#eee"
+                android:id="@+id/cancel"
+                android:layout_marginLeft="@dimen/dp_6"
+                android:layout_marginTop="@dimen/dp_124"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:id="@+id/rg"
+                android:layout_marginBottom="@dimen/dp_30"
+                android:layout_alignParentRight="true"
+                android:layout_height="@dimen/dp_60">
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:id="@+id/wx" />
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0"
+                    android:layout_weight="1"
+                    android:id="@+id/zfb" />
+            </RadioGroup>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

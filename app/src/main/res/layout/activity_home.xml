@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#191931"
+    android:layout_height="match_parent"
+    tools:context="com.bw.movie.view.activity.DetailActivity.DetailActivity">
+
+    <RelativeLayout android:layout_height="match_parent"
+
+        android:layout_width="match_parent"
+        android:id="@+id/movie_re">
+        <ImageView android:layout_height="800dp"
+            android:layout_width="match_parent"
+            android:id="@+id/detail_movie_img"
+            android:scaleType="fitXY"/>
+    <ImageView android:background="@drawable/back"
+        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:id="@+id/detail_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="26dp"/>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/detail_name"
+        android:layout_marginTop="10dp"
+        android:textSize="34dp"
+        android:textColor="#fff"
+        android:text="复仇者联盟"
+        android:layout_centerHorizontal="true"/>
+    <ImageView android:layout_height="20dp"
+        android:layout_width="22dp"
+        android:id="@+id/detail_img"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:id="@+id/detail_guodu"
+        android:layout_alignBottom="@id/detail_movie_img"/>
+
+
+        <TextView
+            android:id="@+id/pf_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/detail_guodu"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="16dp"
+
+            android:textColor="#fff"
+            android:textSize="30sp" />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/pl_tv"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/detail_guodu"
+        android:layout_marginBottom="16dp"/>
+    <RelativeLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/detail_movie_img">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/detail_movie_name"
+            android:layout_marginTop="7dp"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginLeft="24dp"
+            android:text="复仇者联盟4:终局之战"/>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/detail_movie_time"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:text="183分钟"
+            android:layout_below="@id/detail_movie_name"/>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/detail_movie_release_time"
+            android:textSize="25sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_marginLeft="24dp"
+            android:text="2019-04-24 中国大陆上映"
+            android:layout_below="@id/detail_movie_time"/>
+
+        <CheckBox
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:drawableTop="@drawable/aixin"
+            android:button="@null"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="510dp"
+            android:text="未关注"
+            android:textSize="10sp"
+            android:id="@+id/detail_aixin"
+            android:textColor="#fff"
+            />
+    </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight="70dp"
+        app:behavior_hideable="true"
+        android:id="@+id/scoll_view"
+        android:layout_width="match_parent"
+        android:layout_below="@id/detail_movie_release_time"
+        android:layout_height="800dp">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            app:tabTextColor="#fff"
+            android:layout_height="44dp"
+            android:background="#191931"
+            app:tabGravity = "fill"
+            android:id="@+id/detail_tab"
+            />
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detail_tab"
+            android:id="@+id/detail_vp"
+            android:layout_marginBottom="40dp"
+            />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_anchorGravity="bottom"
+        app:layout_anchor="@id/scoll_view"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:background="#e8be18"
+            android:id="@+id/detail_write"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="写影评"
+            android:textColor="#fff"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="60dp"
+            android:background="#AF2929"
+            android:id="@+id/detail_xuan"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:text="选座购票"
+            android:layout_toRightOf="@id/detail_write"
+            android:textColor="#fff"
+            />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

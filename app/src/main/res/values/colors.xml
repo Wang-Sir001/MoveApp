@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorBlack">#141931</color>
+    <color name="colorLightBlack">#1c2243</color>
+    <color name="colorRed">#e8185e</color>
+    <color name="colorWhite">#FAF8F8</color>
+    <color name="colorLoginBg">#141931</color>
+    <color name="colorEditBorder">#999999</color>
+
+    <color name="bright_orange">#ff5500</color>
+    <color name="black">#333333</color>
+    <color name="gray">#deaaaaaa</color>
+    <color name="lipstick">#e8185e</color>
+    <color name="desert">#d3af56</color>
+    <color name="yellow">#e8be18</color>
+    <color name="green">#50b674</color>
+    <color name="black_50">#80000000</color>
+    <color name="dark_gray">#999999</color>
+    <color name="blue">#1c2243</color>
+    <color name="warm_blue">#504ce2</color>
+    <color name="reddish_pink">#ff1a67</color>
+    <color name="white_two">#d8d8d8</color>
+    <color name="dark">#141931</color>
+    <color name="dark00">#00141931</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_blue_grey">#1c2243</color>
+
+    <color name="WelcomeColor">#80000000</color>
+
+    <color name="colorLoginText">#ff72a1</color>
+
+    <color name="colorOne">#00000000</color>
+    <color name="colorTwo">#000000</color>
+    <color name="colorThree">#00000000</color>
+
+    <color name="colorDef">#deffffff</color>
+
+    <color name="pointOne">#CCFF33</color>
+    <color name="pointTwo">#3333CC</color>
+    <color name="pointThree">#993399</color>
+    <color name="white10">#1AFFFFFF</color>
+</resources>
